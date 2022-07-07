@@ -1,0 +1,94 @@
+{
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb",
+        "eslint:recommended"
+    ],
+    "ignorePatterns": [
+        "**/node_modules/*",
+        "build"
+    ],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "root": true,
+    "rules": {
+        "array-bracket-spacing": [
+            "error",
+            "never"
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "eol-last": "error",
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    [
+                        "builtin",
+                        "external",
+                        "internal"
+                    ]
+                ],
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                }
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "indent": [
+            "error",
+            4
+        ],
+        "jsx-a11y/anchor-is-valid": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/mouse-events-have-key-events": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "max-len": "off",
+        "no-await-in-loop": "off",
+        "no-multiple-empty-lines": "error",
+        "no-underscore-dangle": "off",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-indent": [
+            "error",
+            4
+        ],
+        "react/jsx-indent-props": [
+            "error",
+            4
+        ],
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-wrap-multilines": "error",
+        "semi": [
+            "warn",
+            "always"
+        ],
+        "sort-keys": [
+            "error",
+            "asc"
+        ],
+        "space-in-parens": "error",
+        "spaced-comment": "error",
+        "template-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ]
+    }
+}

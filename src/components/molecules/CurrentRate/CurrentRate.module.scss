@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item {
+  & + & {
+    margin-left: 15px;
+  }
+}
+
+.currency {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.rate {
+  font-weight: bold;
+}

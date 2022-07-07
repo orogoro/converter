@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: minmax(200px, 2fr) minmax(120px, 1fr);
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 1px 15px;
+  border: 1px solid #000;
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.inputLoading {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("https://i.pinimg.com/originals/3e/f0/e6/3ef0e69f3c889c1307330c36a501eb12.gif") no-repeat center / contain;
+    content: "";
+  }
+}
+
+.select {
+  border: 1px solid #000;
+  border-radius: 0 3px 3px 0;
+}

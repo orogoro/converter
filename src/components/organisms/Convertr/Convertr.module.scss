@@ -1,0 +1,17 @@
+@import "./src/styles/mixins";
+
+.container {
+  @include wrapper;
+
+  margin-top: 200px;
+}
+
+.groupContainer {
+  > * + * {
+    margin-top: 20px;
+  }
+}
+
+.title {
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+@import "./src/styles/mixins";
+
+.header {
+  border-bottom: 1px solid #EEE;
+}
+
+.headerInner {
+  @include wrapper;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

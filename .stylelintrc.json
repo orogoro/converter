@@ -1,0 +1,27 @@
+{
+    "extends": [
+      "stylelint-config-standard-scss",
+      "stylelint-config-idiomatic-order"
+    ],
+    "plugins": [
+      "stylelint-order"
+    ],
+    "rules": {
+      "color-hex-case": "upper",
+      "declaration-block-no-redundant-longhand-properties": [
+        true,
+        {
+          "ignoreShorthands": [
+            "/grid/"
+          ]
+        }
+      ],
+      "selector-class-pattern": "^.*$",
+      "value-keyword-case": [
+        "lower",
+        {
+          "camelCaseSvgKeywords": true
+        }
+      ]
+    }
+  }
